@@ -1,0 +1,83 @@
+.contato, footer {
+    background-color: var(--branco);
+    padding: 1.5em;
+}
+
+.footer_titulo {
+    font-size: 14px;
+    display: inline;
+}
+
+.contato_texto {
+    padding-bottom: 1.5em;
+}
+
+.contato_input {
+    background-color: transparent;
+    border: 1px solid;
+    border-radius: 24px;
+    padding: 1em;
+    width: 100%;
+}
+
+.contato_input::placeholder {
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 30px;
+    background: url("../images/Email.svg") no-repeat;
+}
+
+.lista_rodape, .rodape_titulo{
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .contato {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contato_input {
+        width: 30%;
+        text-align: center;
+    }
+
+    .contato_input::placeholder {
+        background-position: 10em;
+    }
+
+    .footer_titulo{
+        display: none;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 2em;
+    }
+
+    .lista_rodape, .rodape_titulo{
+        display: block;
+    }
+
+    .lista_rodape_link {
+        text-decoration: none;
+        color: var(--preto);
+        text-align: center;
+    }
+
+    .lista_rodape_item {
+        display: flex;
+        align-items: center;
+    }
+
+    .lista_rodape_item img {
+        margin: 0.4em;
+    }
+
+    .contato_informacoes {
+        margin: 1em;
+    }
+}
